@@ -4,4 +4,13 @@
 3. Добавьте публичный статический метод `PI`, возвращающий значение `Math.PI`
 4. Добавьте публичный статический метод `ceil`, возвращающий число округленное в большую сторону
  */
-export default class TestClass {}
+export default class TestClass {
+    public counter: number = 0;
+    static counterStatic: number = 0;
+    static PI(): number {
+        return Math.PI;
+    }
+    static ceil(e: number): number {
+        return Math.ceil(e);
+    }
+}
